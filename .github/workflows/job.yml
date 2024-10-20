@@ -1,0 +1,12 @@
+name: GHA demos
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "hello NU!"
+
